@@ -1,0 +1,12 @@
+<div class="image-slider-container">
+  <div class="image-slider">
+    <div class="image-slider-inner">
+      <ng-content></ng-content>
+    </div>
+    <ul class="slider-bullets">
+      <li *ngFor="let bullet of bullets;let ind=index;" (click)="setCurrent(ind);" [class.active]="currentImage==ind"></li>
+    </ul>
+    <div class="slider-navigation prev" *ngIf="currentImage!=0" (click)="prev()"><span class="stretch"><</span></div>
+    <div class="slider-navigation next" *ngIf="currentImage!=slidesCount" (click)="next()"><span class="stretch">></span></div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="slide-menu-container">
+    <div class="slide-menu">
+      <ul class="slide-tabs">
+        <li *ngFor="let tab of menus;let ind=index;" class="slide-tab " [class.active]="currentTab==ind" (click)="currentTab=ind;setTab(ind,$event)">
+          <div>{{tab.title}}</div>
+          <div class="slide-tab-bar"></div>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <ng-content>
+  
+      </ng-content>
+    </div>
+  </div>

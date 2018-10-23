@@ -1,0 +1,14 @@
+.content {
+    position: absolute;
+    right: 0;
+    top:0;
+    margin-top: 60px;
+    bottom:0px;
+    left:250px;
+    padding:10px;
+    overflow: hidden;
+}
+
+.content-inner:after {
+    clear: both;
+}

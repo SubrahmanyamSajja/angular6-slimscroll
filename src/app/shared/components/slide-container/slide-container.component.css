@@ -1,0 +1,23 @@
+.slide-container {
+    overflow: hidden;
+}
+.slide-heading {
+    display: flex;
+}
+.slide-heading > div {
+    flex: 1;
+}
+.slide-heading .heading {
+    font-weight: bold;
+    color: rgb(61, 60, 60);
+}
+
+.slide-content {
+    display: flex;
+}
+.moretext {
+    text-transform: uppercase;
+    text-align: right;
+    color: blue;
+    font-weight: 600;
+}

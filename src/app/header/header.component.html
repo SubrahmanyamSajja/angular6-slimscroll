@@ -1,0 +1,12 @@
+<div class="header-container">
+  <ul class="header">
+    <li><img src="assets/logo.png" /></li>
+    <li class="space" ></li>
+    <li><img src="assets/live.png" /></li>
+    <li><i class="fa fa-search"></i></li>
+    <li (click)="showMenu=true;"><i class="fa fa-bars" ></i></li>
+  </ul>
+  <ul class="menu-options" [class.open]="showMenu" >
+    <li *ngFor="let option of options" (click)="showOption(option)">{{option.title}}</li>
+  </ul>
+</div>

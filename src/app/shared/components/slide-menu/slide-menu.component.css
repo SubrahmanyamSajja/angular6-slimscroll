@@ -1,0 +1,30 @@
+.slide-menu-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+ul.slide-tabs {
+    display: flex;
+    transition: all 1s ease 0s;
+}
+ul.slide-tabs li {
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 8px;
+}
+ul.slide-tabs li > div:first-child {
+    padding: 5px 15px;
+}
+
+.slide-tab-bar {
+    height: 3px;
+    width: 0;
+    display: inline-block;
+    transition: all 1s ease 0s;
+}
+.slide-tab.active .slide-tab-bar {
+    background-color: #fff;
+    width:100%;
+}
+
